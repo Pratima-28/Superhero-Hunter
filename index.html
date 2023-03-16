@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Super-Hero Hunter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+	<div class="navbar">
+        <!-- marvel logo image -->
+		<div class="logo">
+		<img src="C:\Users\palla\OneDrive\Desktop\Frontend Projects\Super-Hero Hunter\imgs\Marvel-Comics-logo.png" alt="">
+	</div>
+        <!--  -->
+        <!-- search bar to search your superhero -->
+		<div class="search-btn">
+			<form class="searchbar">
+			<input type="text" id="search-key" class="form-control" placeholder="Search your Super-Hero" name="search">
+			<button type="submit" class="search-btn">
+				<i class="fa fa-search"></i>
+			</button>
+		</div>
+			    </form>
+                <!--  -->
+        <!-- Tthe favourites section -->
+		<div class="favourites">
+        <a href="./favourites/favourites.html" target="_self">
+			<button id="favourites">Favourites</button></a></div>
+	</div>
+	<div class="main">
+		<!-- Heading -->
+		<h2>Super-Hero Characters</h2>
+        <!--  -->
+
+		<!-- this div contains the superhero list fetched from marvel api -->
+		<div id="display">
+			<ol id="superhero-list">
+				
+			</ol>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

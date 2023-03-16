@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../imgs/bg-img2.jpg);
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5148a2;;
+}
+.navbar .logo img{
+    max-width: 20vw;
+    height: 40px;
+}
+.navbar .back a button{
+    height: 30px;
+    padding: 2px 7px;
+    color: white;
+    font-size: 17px;
+    background-color:rgb(72, 72, 234) ;
+}
+
+.navbar div p{
+    color: white;
+    font-size: 30px;
+    
+}
+
+#display ol {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 100vw;
+    overflow: auto;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.fav-container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 25px;
+    align-items: center;
+    transform: translate(-5%,-5%,-5%,-5%);
+    overflow: hidden;
+}
+
+.fav-container p{
+    color: white;
+    background-color: lightslategray;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cinzel;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fav-container img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    transition: all 1000ms;
+}
+.fav-container img:hover{
+    transform: scale(1.1);
+    box-shadow: x rgb(232, 97, 97);
+}
+.fav-container button{
+    padding: 3px 8px;
+    height: 40px;
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(54, 126, 170);
+    cursor: pointer;
+}

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./imgs/bg-img4.jpg);
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5148a2;;
+}
+
+.navbar .logo img{
+    max-width: 20vw;
+    height: 40px;
+}
+.navbar form input{
+    height: 30px;
+    width: 40vw;
+}
+.navbar form button{
+    margin-left: -4px;
+    height: 33px;
+    width: 33px;
+}
+
+.navbar .favourites button{
+    font-size: 20px;
+    margin-right: 10px;
+    height: 32px;
+    width: 180px;
+    background-color: rgb(232, 97, 97);
+    cursor: pointer;
+}
+
+/* main */
+.main h2{
+    text-align: center;
+    margin: 10px 0;
+    background-color: rgb(172, 179, 197);
+}
+
+/* styling the superhero list */
+#display ol {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 100vw;
+    overflow: auto;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 25px;
+    align-items: center;
+    transform: translate(-5%,-5%,-5%,-5%);
+    overflow: hidden;
+}
+.list-container a img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    transition: all 1000ms;
+}
+.list-container a img:hover{
+    transform: scale(1.1);
+    box-shadow: x rgb(232, 97, 97);
+}
+.list-container a button{
+    padding: 3px 8px;
+    height: 40px;
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(54, 126, 170);
+    cursor: pointer;
+}
+#superhero-list{
+    height: 81vh;
+    width: fit-content;
+} 
+#superhero-list::-webkit-scrollbar{
+    display: none;
+}
